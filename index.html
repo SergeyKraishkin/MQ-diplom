@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -31,9 +31,9 @@
 
 <section class="trends">
   <div class="trends__inner">
-  	<div class="trends__title">
+  	<h3 class="trends__title">
       	Сейчас в тренде
-      </div>
+      </h3>
     <div class="trends__content">
      
       <article class="trends__topic trends__topic_1">
@@ -59,7 +59,7 @@
               <a class="trend__category_link" href="#0">Food</a>
             </li>
           </ul>
-          <h3 class="trend__title"> <a class="trend__title_link" href="#0">сыры на красивых  картинках из интернета: какие они на вкус?</a>
+          <h3 class="trend__title"> <a class="trend__title_link" href="#0t">сыры на красивых  картинках из интернета: какие они на вкус?</a>
           </h3>
         </div>
       </article>
@@ -285,48 +285,46 @@
         <div class="short__posts_list">
           <article class="short__posts_post">
             <!-- Short Post 1 -->
-            <img alt="10 Мест" src="img/last-post1.jpg" width="70">
-
+            <img alt="10 Мест" src="img/last-post1.jpg" width="70" height="70">
             <div class="short__posts_list_title">
               <time>14 июня 2019</time>
-              <a href="#0">10 мест, ради которых стоит
-                проснуться</a>
+              <h3><a href="#0">10 мест, ради которых стоит проснуться</a></h3>
             </div>
           </article>
           <article class="short__posts_post">
             <!-- Short Post 2 -->
-            <img alt="Йога" src="img/last-post2.jpg" width="70">
+            <img alt="Йога" src="img/last-post2.jpg" width="70" height="70">
             <div class="short__posts_list_title">
               <time>14 июня 2019</time>
-              <a href="#0">Йога для начинающих</a>
+              <h3><a href="#0">Йога для начинающих</a> </h3>
             </div>
           </article>
 
           <article class="short__posts_post">
             <!-- Short Post 3 -->
-            <img alt="Йога" src="img/last-post3.jpg" width="70">
+            <img alt="Йога" src="img/last-post3.jpg" width="70" height="70">
 
             <div class="short__posts_list_title">
               <time>14 июня 2019</time>
-              <a href="#0">Как мы превратили классное место в балкон</a>
+              <h3><a href="#0">Как мы превратили классное место в балкон</a></h3>
             </div>
           </article>
 
           <article class="short__posts_post">
             <!-- Short Post 4 -->
-            <img alt="Йога" src="img/last-post4.jpg" width="70">
+            <img alt="Йога" src="img/last-post4.jpg" width="70" height="70">
             <div class="short__posts_list_title">
               <time>14 июня 2019</time>
-              <a href="#0">Кулинарный подход к науке</a>
+             <h3><a href="#0">Кулинарный подход к науке</a></h3>
             </div>
           </article>
 
           <article class="short__posts_post">
             <!-- Short Post 5 -->
-            <img alt="Йога" src="img/last-post5.jpg" width="70">
+            <img alt="Йога" src="img/last-post5.jpg" width="70" height="70">
             <div class="short__posts_list_title">
               <time>14 июня 2019</time>
-              <a href="#0">лучшие прически для распущенных волос</a>
+              <h3><a href="#0">лучшие прически для распущенных волос</a></h3>
             </div>
           </article>
         </div>
@@ -385,7 +383,7 @@
 
       </section>
 
-      <section class="aside__item">
+      <div class="aside__item">
         <h3 class="сategories__title">
           Темы
         </h3>
@@ -409,16 +407,17 @@
             <span class="categories-count">12</span>
         </ul>
 
-      </section>
+      </div>
+
     </aside>
   </div>
   </div>
 
-  <div class="shop">
-  	<div class="shop__inner">
-  	<div class="shop__title">
+ 
+  	<section class="shop__wrapper">
+  	<h3 class="shop__title">
       	Наши изделия
-      </div>
+      </h3>
     <div class="shop__content">
   
       <article class="shop__position">   <!-- shop 1 -->      	
@@ -435,11 +434,13 @@
             <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#"><span>здесь.</span></a>
             </p>
           </div>
-           <div class="shop__item_price">
-            <p>1000 Р</p> <span>800 Р</span>
-          </div>
-           <input type="submit" class="shop__button" value="В магазин">
-          </button>
+            <div class="shop__item_wrapper"> 
+              <div class="shop__item_price">
+              <p>1000 Р</p> <span>800 Р</span>
+              </div>
+              <button type="button" class="shop__button">В магазин
+              </button>
+           </div> 
         </div>
       </article>
       
@@ -457,11 +458,13 @@
             <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#"><span>весенняя серия постов</span></a> в блоге и несколько подкастов.
             </p>
           </div>
+            <div class="shop__item_wrapper"> 
            <div class="shop__item_price">
             <span>3500 Р</span>
           </div>
-           <input type="submit" class="shop__button" value="В магазин">
+           <button type="submit" class="shop__button">В магазин
           </button>
+        </div>
         </div>
       </article>
 
@@ -477,20 +480,25 @@
           </h3>
           <div class="shop__item_text">
             <p>Набор из двух подушек с модными принтами. Видео о создании здесь.
+              Набор из двух подушек с модными принтами. Видео о создании здесь.
+              Набор из двух подушек с модными принтами. Видео о создании здесь.
+              Набор из двух подушек с модными принтами. Видео о создании здесь.
+              Набор из двух подушек с модными принтами. Видео о создании здесь.
+              Набор из двух подушек с модными принтами. Видео о создании здесь.
             </p>
           </div>
+            <div class="shop__item_wrapper"> 
            <div class="shop__item_price">
             <p>400 Р</p> <span>500 Р</span>
           </div>
-           <input type="submit" class="shop__button" value="В магазин">
+           <button type="submit" class="shop__button">В магазин
           </button>
+        </div>
         </div>
       </article>
       
     </div>
-  </div>
-
-  </div>
+  </section>
 
 
   <footer class="footer">

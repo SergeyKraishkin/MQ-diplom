@@ -79,6 +79,7 @@ body {
   color: #ffffff;
 }
 .header__main_text {
+  text-transform: uppercase;
   position: relative;
   font-family: OpenSans Bold;
   font-weight: 700;
@@ -199,7 +200,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 15px;
+ 
 }
 .post__list {
   max-width: 780px;
@@ -291,6 +292,9 @@ body {
   display: flex;
   margin-top: 22px;
 }
+.short__posts_post h3 {
+  margin: 0px;
+} 
 .short__posts_list_title {
   margin-left: 10px;
   display: flex;
@@ -451,9 +455,9 @@ body {
   vertical-align: super;
 }
 /*Магазин*/
-.shop__inner {
+
+.shop__wrapper {
  max-width: 1200px;
- padding: 30px 0px 30px 0px;
  margin: auto;
 }
 .shop__title {
@@ -480,7 +484,6 @@ body {
   justify-content: space-between;
 }
 .shop__position {
-  padding: 15px;
   width: 340px;
   display: flex;
   flex-direction: column; 
@@ -498,8 +501,9 @@ body {
   flex-grow: 1;
   width: 340px;
   border: 2px solid #b59f5b;
-  padding: 40px 20px 0px 20px;
+  padding: 20px 20px 10px 20px;
   z-index: 3;
+  align-items: center;
 }
 .shop__item_title {
   text-transform: uppercase;
@@ -521,6 +525,12 @@ body {
   font-family: OpenSans Regular;
   font-size: 15px;
   color: #b59f5b;
+}
+.shop__item_wrapper {
+  width: 296px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 .shop__item_text  span:hover {
   text-decoration: underline;
@@ -551,7 +561,7 @@ body {
   color: #ffffff;
   cursor: pointer;
   margin-left: auto;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 
 /*Подвал*/
@@ -560,7 +570,6 @@ body {
 }
 .footer__wrapper {
   max-width: 1200px;
-  padding: 0 15px;
   margin: auto;
 }
 
