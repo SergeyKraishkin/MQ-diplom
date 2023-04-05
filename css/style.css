@@ -295,6 +295,9 @@ body {
 .short__posts_post h3 {
   margin: 0px;
 } 
+.short__posts_post h4 {
+  margin: 0px;
+} 
 .short__posts_list_title {
   margin-left: 10px;
   display: flex;
@@ -435,7 +438,7 @@ body {
 }
 .categories-item {
   padding: 15px 0px 10px 0px;
-  border-bottom: 2px solid #b59f5b;
+  border-bottom: 1px solid #EDEDED;
 }
 .categories-count {
   font-family: OpenSans Bold;
@@ -488,7 +491,6 @@ body {
   display: flex;
   flex-direction: column; 
 }
-
 .shop__picture {
   padding: 20px;
   width: 300px;
