@@ -12,6 +12,8 @@ ol {
 body {
   margin: 0;
 }
+
+
 @font-face {
   font-family: "OpenSans Regular";
   src: url(../fonts/OpenSans-Regular.woff);
@@ -57,10 +59,17 @@ body {
 }
 .header__logo {
   width: 179px;
-  margin: 0px 15px;
   box-sizing: border-box;
 }
-.logo__imgage {
+.header__logo_menu_burger {
+  width: 50px;
+  height: 50px;
+  margin: 0px 15px;
+  align-items: right;
+  display: none;
+}
+
+.logo__image {
   object-fit: contain;
 }
 .menu__list {
@@ -72,8 +81,12 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #ffffff;
-  padding: 0px 21px;
 }
+
+.menu__list_item:nth-child(1n + 2) { 
+  margin-left: 10px;
+}
+
 .menu__list_link {
   text-decoration: none;
   color: #ffffff;
@@ -83,10 +96,11 @@ body {
   position: relative;
   font-family: OpenSans Bold;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 3.437rem;
   color: #ffffff;
   text-align: center;
   z-index: 3;
+  margin-top: 100px;
 }
 
 /* Тренды */
@@ -101,7 +115,7 @@ body {
 .trends__title {
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #0F0D0E;
   text-align: center;
   padding: 0px 0px 30px 0px;
@@ -201,7 +215,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
    padding: 0px 15px 0px 15px;
- 
 }
 .post__list {
   max-width: 780px;
@@ -229,7 +242,7 @@ body {
 .post__category_link {
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #b59f5b;
   text-decoration: none;
 }
@@ -239,7 +252,7 @@ body {
 .post__title_link {
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #0f0d0e;
   text-decoration: none;
 }
@@ -248,13 +261,13 @@ body {
 }
 .post__date_and_author {
   font-family: OpenSans Bold;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #000000;
 }
 .text__near_time {
   margin-left: 15px;
   font-family: OpenSans Bold;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #000000;
 }
 .side__pannel {
@@ -268,7 +281,7 @@ body {
   width: 270px;
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #0f0d0e;
   text-align: center;
 }
@@ -307,7 +320,7 @@ body {
 .short__posts_list_title a {
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 14px;
+  font-size: 0.75rem;
   text-decoration: none;
   color: #000000;
 }
@@ -342,7 +355,7 @@ body {
   width: 270px;
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 14px;
+  font-size: 0.75rem;
   color: #0f0d0e;
   text-align: center;
 }
@@ -382,7 +395,7 @@ body {
   width: 270px;
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 14px;
+  font-size: 0.75rem;
   color: #0f0d0e;
   text-align: center;
 }
@@ -421,7 +434,7 @@ body {
   width: 270px;
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 14px;
+  font-size: 0.75rem;
   color: #0f0d0e;
   text-align: center;
 }
@@ -449,7 +462,7 @@ body {
 .categories-link {
   text-decoration: none;
   font-family: OpenSans Bold;
-  font-size: 14px;
+  font-size: 0.75rem;
   color: #000000;
 }
 .categories-item:hover a {
@@ -468,7 +481,7 @@ body {
 .shop__title {
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #0F0D0E;
   text-align: center;
   margin-bottom: ;
@@ -499,27 +512,27 @@ body {
 }
 .shop__frame {
   position: relative;
-  margin-top: -40px;
+  margin-top: -50px;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
   width: 340px;
   border: 2px solid #b59f5b;
-  padding: 20px 20px 10px 20px;
+  padding: 50px 20px 10px 20px;
   z-index: 3;
   align-items: start;
 }
 .shop__item_title {
   text-transform: uppercase;
   font-family: OpenSans Bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #0F0D0E;
   text-align: left;
   margin: 0px;
 }
 .shop__item_text {
   font-family: OpenSans Regular;
-  font-size: 15px;
+  font-size: 0.937rem;
   color: #0f0d0e;
   margin: 0px;
 }
@@ -527,7 +540,7 @@ body {
 .shop__item_text  a{
   text-decoration: none;
   font-family: OpenSans Regular;
-  font-size: 15px;
+  font-size: 0.937rem;
   color: #b59f5b;
 }
 .shop__item_wrapper {
@@ -546,17 +559,18 @@ body {
 .shop__item_price p {
   text-decoration: line-through;
   font-family: OpenSans Regular;
-  font-size: 12px;
+  font-size: 0.75rem;
   margin: 0px;
 }
 .shop__item_price span {
-  font-family: OpenSans Regular;
-  font-size: 15px;
+  font-family: OpenSans Bold;
+  font-size: 0.937rem;
   margin: 0px;
 }
 
 .shop__button {
   text-transform: uppercase;
+  font-family: OpenSans Bold;
   width: 140px;
   height: 48px;
   border: none;
@@ -565,7 +579,7 @@ body {
   color: #ffffff;
   cursor: pointer;
   margin-left: auto;
-  /*margin-bottom: 30px;*/
+
 }
 
 /*Подвал*/
@@ -614,7 +628,7 @@ body {
 
 .copyrights {
   font-family: OpenSans Bold;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #999999;
   text-align: center;
   margin-top: 20px;
@@ -626,12 +640,128 @@ body {
 
 time {
   font-family: OpenSans Regular;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #888888;
 }
 .paragraph {
   font-family: OpenSans Regular;
-  font-size: 15px;
+  font-size: 0.937rem;
   color: #0f0d0e;
   margin-top: 20px;
 }
+
+@media screen and (min-width: 641px) and (max-width: 1199px) {
+ 
+.header {
+  background-image: url(../img/banner-bg-tablet.jpg);
+  }
+ .header__main_text {
+  font-size: 2.5rem;
+  }
+  .trends__topic {
+  width: 49.7%;
+  margin-bottom: 5px;
+  }
+  .post__list {
+    max-width: 48%;
+  }
+  .posts {
+    flex-wrap: wrap;
+  }
+  .post__frame {
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 96%;
+  }
+  .post__image {
+    width: 96%;
+  }
+
+  .menu__list {
+  display: none;
+  }
+  .header__logo_menu_burger {
+  display: block;
+  margin-left: 70%;
+  }
+  .content__wrapper {
+  justify-content: space-evenly;
+  }
+  .side__pannel {
+    width: 48%;
+  }
+  .shop__position {
+    width: 42%;
+  }
+
+}
+
+@media screen and  (max-width: 640px) {
+  .trends__topic {
+  width: 99.7%;
+  margin-bottom: 5px;
+  }
+  .header {
+  background-image: url(../img/banner-mobile.jpg);
+  }
+  .header__main_text {
+  font-size: 1.625rem;
+  }
+  .header__menu {
+    flex-wrap: wrap;
+  }
+  .header__logo {
+    order: 1;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .header__logo_menu_burger {
+    order: 0;
+    width: 100%;
+    margin-left: 90%;
+  }
+  .post__list {
+     width: 96%;
+  }
+  .posts {
+    flex-wrap: wrap;
+  }
+  .post__title_link {
+  font-size: 1rem;
+  }
+  .post__frame {
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+  .post__image {
+    width: 96%;
+  }
+  .post__frame {
+    width: 96%;
+  }
+
+  .menu__list {
+  display: none;
+  }
+  .header__logo_menu_burger {
+  display: block;
+  }
+  .content__wrapper {
+  justify-content: space-evenly;
+  }
+  .shop__position {
+    width: 96%;
+  }
+  .shop__picture {
+    width: 96%;
+  }
+  .shop__frame {
+    width: 96%;
+  }
+  .shop__content {
+    justify-content: center;
+  }
+
+
+}
+
