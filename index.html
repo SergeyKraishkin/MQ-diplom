@@ -337,7 +337,7 @@
         <form class="search__form">
           <input type="input" name="search" placeholder="&emsp;Найти..." class="search__input">
           <input type="submit" class="search__button" value="">
-          </button>
+          </input>
         </form>
       </section>
 
@@ -347,7 +347,7 @@
         </h3>
         <form class="subscribe__form">
           <input type="input" name="subscribe" placeholder="&emsp;Ваш email адрес" class="subscribe__input">
-          <input type="submit" class="subscribe__button" value="Подписаться">
+          <button type="submit" class="subscribe__button" value="Подписаться">
           </button>
         </form>
       </section>
@@ -465,7 +465,7 @@
            <div class="shop__item_price">
             <span>3500 Р</span>
           </div>
-           <button type="submit" class="shop__button">В магазин
+           <button type="button" class="shop__button">В магазин
           </button>
         </div>
         </div>
@@ -490,7 +490,7 @@
            <div class="shop__item_price">
             <p>400 Р</p> <span>500 Р</span>
           </div>
-           <button type="submit" class="shop__button">В магазин
+           <button type="button" class="shop__button">В магазин
           </button>
         </div>
         </div>
@@ -527,6 +527,37 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup__menu">
+    <div class="close__popup"></div>
+    <div class="popup__title">
+      ваш фидбек
+    </div>
+    
+    <form class="submit__form">
+      
+      <div class="choice__form">
+        <p> Как часто вы заходите на сайт?</p>
+        <input class="choice__form_input" placeholder="Почти каждый день">
+       </div>
+        <p>Вы подписаны на e-mail рассылку?</p>
+
+      <div class="form__radio">
+        <input class="radio" id="radio__yes" type="radio" name="radio" value="1" checked>
+       <label for="radio-1">Да</label>
+      </div>
+
+       <div class="form__radio">
+        <input class="radio" id="radio__no" type="radio" name="radio" value="1" checked>
+       <label for="radio-1">Нет</label>
+      </div>
+      <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+      <textarea class="textarea__input" rows="10" cols="45" placeholder="Может быть, больше рецептов" name="message" required>
+      </textarea>
+      <input class="send__form" type="submit" value="Отправить">
+  </form>
+
+  </div>
 
 
 </body>

@@ -84,7 +84,7 @@ body {
 }
 
 .menu__list_item:nth-child(1n + 2) { 
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .menu__list_link {
@@ -213,11 +213,12 @@ body {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
    padding: 0px 15px 0px 15px;
 }
 .post__list {
   max-width: 780px;
+  margin-right: 30px;
 }
 .posts {
   display: flex;
@@ -499,13 +500,17 @@ body {
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .shop__position {
   width: 340px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
+.shop__position:nth-child(-n+2){
+  margin-right: 30px;
+}
+
 .shop__picture {
   padding: 20px;
   width: 300px;
@@ -650,6 +655,105 @@ time {
   margin-top: 20px;
 }
 
+
+
+
+/* Popup Menu*/
+.popup__menu {
+  position: fixed;
+  left: 30vw;
+  right: 30vw;
+  top: 30vh;
+  margin: auto;
+  padding: 30px 10px 30px 10px;
+  width: 400px;
+  display: flex;
+  z-index: 3;
+  background-color: white;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.close__popup{
+  position: absolute;
+  content: "";
+  top: -35px;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../svg/form-x.svg);
+}
+.popup__title {
+  text-transform: uppercase;
+  font-family: OpenSans Bold;
+  font-size: 1.125rem;
+  color: #0F0D0E;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.popup__title::after {
+  display: block;
+  content: "";
+  position: relative;
+  margin: 10px auto 0;
+  width: 65px;
+  height: 3px;
+  background-color: #b59f5b;
+  margin-bottom: 10px;
+}
+.submit__form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 0px 20px 0px 20px;
+}
+.choice__form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+ } 
+.submit__form p{
+  width: 100%;
+  margin-bottom: 5px;
+ } 
+.choice__form_input{
+  width: 100%;
+  background-color: #F3F7F6;
+  padding: 5px 10px 5px 10px;
+  border: none;
+}
+.form__radio{
+  display: inline-block; 
+  font-size: 15px;
+}
+.form__radio:nth-of-type(n+2){
+  margin-left: 10px;
+}
+.textarea__input{
+  width: 100%;
+  background-color: #F3F7F6;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  resize: none;
+}
+.send__form {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 12px 0px 12px 0px;
+    background-color: #B69F5B;
+    border: none;
+    text-transform: uppercase;
+    font-family: OpenSans Bold;
+    font-size: 1rem;
+    color: white;
+}
+
+/* different screen*/
+
 @media screen and (min-width: 641px) and (max-width: 1199px) {
  
 .header {
@@ -662,8 +766,11 @@ time {
   width: 49.7%;
   margin-bottom: 5px;
   }
+  .content__wrapper{
+    justify-content: center;
+  }
   .post__list {
-    max-width: 48%;
+    max-width: 300px;
   }
   .posts {
     flex-wrap: wrap;
@@ -676,22 +783,28 @@ time {
   .post__image {
     width: 96%;
   }
-
   .menu__list {
-  display: none;
+    display: none;
   }
   .header__logo_menu_burger {
-  display: block;
-  margin-left: 70%;
-  }
-  .content__wrapper {
-  justify-content: space-evenly;
+    display: block;
+    margin-left: 70%;
   }
   .side__pannel {
-    width: 48%;
+    width: 270px;
   }
   .shop__position {
-    width: 42%;
+    width: 340px;
+  }
+  .shop__picture {
+    width: 340px;
+  }
+  .shop__position:nth-child(-n+2) {
+  margin-right: 30px;
+  }
+  .popup__menu {
+  left: 20vw;
+  right: 20vw;
   }
 
 }
@@ -721,7 +834,8 @@ time {
     margin-left: 90%;
   }
   .post__list {
-     width: 96%;
+     width: 300px;
+     margin-right: 0px;
   }
   .posts {
     flex-wrap: wrap;
@@ -747,21 +861,25 @@ time {
   display: block;
   }
   .content__wrapper {
-  justify-content: space-evenly;
+  justify-content: center;
   }
   .shop__position {
-    width: 96%;
+    width: 340px;
   }
   .shop__picture {
-    width: 96%;
+    width: 340px;
   }
   .shop__frame {
-    width: 96%;
+    width: 340px;
   }
   .shop__content {
     justify-content: center;
   }
-
+  .popup__menu {
+  left: 10vw;
+  right: 10vw;
 
 }
 
+
+}
