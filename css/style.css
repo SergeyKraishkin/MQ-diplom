@@ -765,7 +765,6 @@ input:checked + .radio__text:before {
 background-image: url(../svg/form-circle.svg);
 }
 
-
 .form__radio:nth-of-type(n+2){
   margin-left: 10px;
 }
@@ -801,8 +800,8 @@ background-image: url(../svg/form-circle.svg);
 
 /* different screen*/
 
-@media screen and (min-width: 641px) and (max-width: 1199px) {
- 
+@media screen and (min-width: 641px) and (max-width: 1199px) and (orientation: portrait){
+
 .header {
   background-image: url(../img/banner-bg-tablet.jpg);
   }
@@ -856,7 +855,10 @@ background-image: url(../svg/form-circle.svg);
 
 }
 
-@media screen and  (max-width: 640px) {
+
+
+
+@media screen and  (max-width: 640px) and (orientation: portrait){
   .trends__topic {
   width: 99.7%;
   margin-bottom: 5px;
@@ -925,8 +927,19 @@ background-image: url(../svg/form-circle.svg);
   .popup__menu {
   left: 10vw;
   right: 10vw;
-
+  }
 }
 
-
+@media screen and (min-width: 641px) and (max-device-height: 1199px) and (orientation: landscape){
+ .trends__topic {
+  width: 24.7%;
+  margin-bottom: 5px;
+  }
 }
+
+@media screen and (max-width: 640px) and (orientation: landscape){
+  .trends__topic {
+  width: 49.7%;
+  margin-bottom: 5px;
+  }
+
