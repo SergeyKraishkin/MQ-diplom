@@ -533,27 +533,27 @@
     <div class="popup__title">
       ваш фидбек
     </div>
-    
     <form class="submit__form">
-      
-      <div class="choice__form">
-        <p> Как часто вы заходите на сайт?</p>
-        <input class="choice__form_input" placeholder="Почти каждый день">
-       </div>
-        <p>Вы подписаны на e-mail рассылку?</p>
+      <span class="form__hint">Как часто вы заходите на сайт?</span>
+        <select class="choice__form_input" name="theme" required>
+          <option>Почти каждый день</option>
+          <option>Раз в неделю</option>
+          <option>Раз в месяц</option>
+        </select>
+      <span class="form__hint">Вы подписаны на e-mail рассылку?</span>
 
-      <div class="form__radio">
+      <label class="form__radio">
         <input class="radio" id="radio__yes" type="radio" name="radio" value="1" checked>
-       <label for="radio-1">Да</label>
-      </div>
+       <span class="radio__text">Да</span>
+      </label>
 
-       <div class="form__radio">
+       <label class="form__radio">
         <input class="radio" id="radio__no" type="radio" name="radio" value="1" checked>
-       <label for="radio-1">Нет</label>
-      </div>
-      <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-      <textarea class="textarea__input" rows="10" cols="45" placeholder="Может быть, больше рецептов" name="message" required>
-      </textarea>
+       <span class="radio__text">Нет</span>
+      </label>
+
+       <span class="form__hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+      <textarea class="textarea__input" rows="10" cols="45" placeholder="Может быть, больше рецептов" name="message" required name="msg"></textarea>
       <input class="send__form" type="submit" value="Отправить">
   </form>
 
